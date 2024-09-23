@@ -2966,6 +2966,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-native-material-ripple@npm:^0.9.6":
+  version: 0.9.6
+  resolution: "@types/react-native-material-ripple@npm:0.9.6"
+  dependencies:
+    "@types/react": "*"
+    react-native: "*"
+  checksum: 1c883bf7d951bf9e68f5c094ded56bde736d348b1b6146e73bbbfcfa5a64983ee15286a15b6c2b055ed816704bbbb8b45b6f7e8df0b1dcfcf5e9b821e6e37e76
+  languageName: node
+  linkType: hard
+
 "@types/react-native-vector-icons@npm:^6.4.18":
   version: 6.4.18
   resolution: "@types/react-native-vector-icons@npm:6.4.18"
@@ -3250,6 +3260,7 @@ __metadata:
     "@react-navigation/native": ^6.1.7
     "@react-navigation/native-stack": ^6.9.13
     "@types/react": ^18.2.6
+    "@types/react-native-material-ripple": ^0.9.6
     "@types/react-native-vector-icons": ^6.4.18
     "@types/react-test-renderer": ^18.0.0
     axios: ^1.4.0
@@ -3262,8 +3273,11 @@ __metadata:
     prettier: 2.8.8
     react: 18.3.1
     react-native: 0.75.2
+    react-native-biometrics: ^3.0.1
     react-native-fast-image: ^8.6.3
     react-native-gesture-handler: ^2.16.1
+    react-native-material-ripple: ^0.9.1
+    react-native-modal-datetime-picker: ^18.0.0
     react-native-pager-view: ^6.3.1
     react-native-reanimated: ^3.7.0
     react-native-responsive-fontsize: ^0.5.1
@@ -8553,7 +8567,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.5.10, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -8667,6 +8681,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-biometrics@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "react-native-biometrics@npm:3.0.1"
+  peerDependencies:
+    react-native: ">=0.60.0"
+  checksum: 3864fea4bbf3dee1d360daf048e4f9980083c4e919e95082a5e4646e3b22475bb2b592cae18cccd7fb55b50498dca29e5346cf98d958646cbfc26fed5654bc53
+  languageName: node
+  linkType: hard
+
 "react-native-fast-image@npm:^8.6.3":
   version: 8.6.3
   resolution: "react-native-fast-image@npm:8.6.3"
@@ -8698,6 +8721,30 @@ __metadata:
   peerDependencies:
     react-native: ">=0.42.0"
   checksum: 024376646009a966e33e12fc2358751830818b0fb73b1c601a64eb5e490d2dc43eec23668991b985a8c412a84d087f20eb45bb9b593567c08b66e741b7bddda5
+  languageName: node
+  linkType: hard
+
+"react-native-material-ripple@npm:^0.9.1":
+  version: 0.9.1
+  resolution: "react-native-material-ripple@npm:0.9.1"
+  dependencies:
+    prop-types: ^15.5.10
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: e5572870de49859798daac67c1c9b307b4670b34e96dac84b00b7fd5e5d703760d69ccbb5c4eb29a9c10f4c264e404165a99f04a1ac83aa16e8a57cd9a345feb
+  languageName: node
+  linkType: hard
+
+"react-native-modal-datetime-picker@npm:^18.0.0":
+  version: 18.0.0
+  resolution: "react-native-modal-datetime-picker@npm:18.0.0"
+  dependencies:
+    prop-types: ^15.7.2
+  peerDependencies:
+    "@react-native-community/datetimepicker": ">=6.7.0"
+    react-native: ">=0.65.0"
+  checksum: 30d28a8e599c7a36df4c3e93928aa246087edb95a82a98cb1162b045d18db47447c4e28a89190c83a8258f080066531b2b67805a9aeb007b135d62abfccf8c4c
   languageName: node
   linkType: hard
 
@@ -8839,7 +8886,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native@npm:0.75.2":
+"react-native@npm:*, react-native@npm:0.75.2":
   version: 0.75.2
   resolution: "react-native@npm:0.75.2"
   dependencies:
